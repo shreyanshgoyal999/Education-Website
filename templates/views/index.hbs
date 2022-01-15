@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jEducation</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar background nav-height">
+        <ul class="nav-list text-small v-class-rsp">
+            <img class="nav-list-item" src="./img/logo.jpg">
+            <li class="nav-list-item"><a href="#Home">Home</a></li>
+            <li class="nav-list-item"><a href="#Services">About</a></li>
+            <li class="nav-list-item"><a href="#Services">Services</a></li>
+            <li class="nav-list-item"><a href="#Contact">Contact Us</a></li>
+        </ul>
+        <div class="nav-right v-class-rsp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <!-- Adding Burger for small devices(making web responsive) -->
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <a name="Home"></a> 
+    <div class="background home-container " >
+        <div class="main-box">
+            
+            <div class="box">
+                <div class="box-text text-small">
+                    <h1 class="text-big">Future Of Indian Education </h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur voluptate similique quisquam odio sint mollitia, beatae quia illum nobis sed iste ipsa qui veritatis at esse dolorem quos aperiam, aspernatur expedita consequatur velit ducimus Lorem, ipsum dolor.
+                </div>
+                <div class="home-buttons">
+                    <button class="btn btn-lg">Subscribe</button>
+                    <button class="btn btn-lg">Watch Vedio</button>
+                </div>
+            </div>
+            
+            <div class="box-img">
+                <img src="img/home_img.jpg">
+            </div> 
+            
+        </div>  
+    </div>
+
+    <!-- Services Section -->
+    <a name="Services"></a>
+    <div class="services-containerRight">
+        <div class="services-box">
+            <h1 class="text-big">Make In India Initiative</h1>
+            <div class="text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem inventore minima molestias nesciunt dolore similique reiciendis iure suscipit aspernatur quos optio amet incidunt beatae, unde corrupti nihil recusandae at ea voluptate voluptas. Asperiores, perspiciatis. Minima, deserunt Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ea ut, reprehenderit praesentium dolore dolorum aspernatur iusto consectetur modi et.
+            </div>
+        </div>    
+        <div class="services-img">
+            <img src="https://source.unsplash.com/1600x900/?code,computer">
+        </div>
+    </div>
+    
+    <div class="services-containerLeft">
+        <div class="services-box">
+            <h1 class="text-big">Making India Manufacturing Hub</h1>
+            <div  class="text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem inventore minima molestias nesciunt dolore similique reiciendis iure suscipit aspernatur quos optio amet incidunt beatae, unde corrupti nihil recusandae at ea voluptate voluptas. Asperiores, perspiciatis. Minima, deserunt Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ea ut, reprehenderit praesentium dolore dolorum aspernatur iusto consectetur modi et.
+            </div>
+        </div>    
+        <div class="services-img">
+            <img src="https://source.unsplash.com/1600x900/?technology,code,laptop">
+        </div>
+    </div>
+    
+    <div class="services-containerRight">
+        <div class="services-box">
+            <h1 class="text-big">Impact of Coder in India's Development</h1>
+            <div  class="text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem inventore minima molestias nesciunt dolore similique reiciendis iure suscipit aspernatur quos optio amet incidunt beatae, unde corrupti nihil recusandae at ea voluptate voluptas. Asperiores, perspiciatis. Minima, deserunt Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ea ut, reprehenderit praesentium dolore dolorum aspernatur iusto consectetur modi et.
+            </div>
+        </div>    
+        <div class="services-img">
+            <img src="https://source.unsplash.com/1600x900/?code">
+        </div>
+    </div>
+    
+    <!-- Conatct Us Section -->
+    <a name="Contact"></a>
+    {{status}}
+    <div class="contactUS" >
+        <h1 class="text-big">Contact Us</h1>
+        <form  action="/contact" method="post">
+        <input class="input" type="text" name="name" id="name" placeholder="Enter name">
+        <input class="input" type="email" name="email" id="email" placeholder="Enter email">
+        <input class="input" type="number" name="number" id="number" placeholder="Enter mobile no.">
+        <textarea class="input" rows=4 name="concern">
+        </textarea>
+        <button type="submit" class="btn btn-submit ">Submit</button>
+    </form>
+    
+</div>
+
+<footer class="footer">Copyright &copy; jEducation | All Rights Reserved</footer>
+
+</body>
+<script src="./js/index.js"></script>
+</html>

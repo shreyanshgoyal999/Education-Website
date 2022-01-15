@@ -1,0 +1,304 @@
+*{
+    margin : 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.text-big{
+    font-size: 31px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+/* Making burger  */
+/* burger's display will be changed in media query(bcz we want it  for small size devices) */
+.burger{
+    position: absolute;
+    right : 17px;
+    top : 12px;
+    display: none;
+}
+
+.line{
+    width : 25px;
+    margin : 3px 0px;
+    height: 1px;
+    background-color: white;
+}
+
+/* Navbar */
+.navbar{
+    display : flex;
+    position: sticky;
+    top:0px;
+}
+
+
+
+.nav-list img {
+    width: 41px;
+    border-radius: 169px;
+}
+
+.nav-list{
+    display:flex;
+    align-items: center;
+    width:70% ;
+}
+
+.nav-list li{
+    list-style: none;
+    
+}
+
+.nav-list li a{
+text-decoration: none;
+color : white;
+
+}
+.nav-list-item{
+    margin: 0px 29px;
+
+}
+
+.nav-right{
+    width: 30%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding : 0px 10px;
+}
+
+.nav-right input{
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn{
+    border-radius: 6px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding: 0px 4px;
+    margin: 2px 7px;
+}
+
+.btn-lg{
+    margin : 4px 0px;
+    padding: 1px 9px;
+    font-size: 14px;
+}
+
+.background{  
+    background: rgba(0, 0,0,0.7) url("../img/background.jpg");
+    background-blend-mode: darken;
+    background-size : cover;
+    
+}
+
+/* Home */
+.home-container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.main-box{
+    height: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 40%;
+    color: white;
+    margin: 16px;
+    padding: 9px;
+}
+
+.box-img{
+    margin: 0px 17px;
+}
+
+.box-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid white;
+}
+
+/* Services */
+.services-containerRight{
+    display: flex;
+    width: 75%;
+    margin : 4px auto;
+    padding: 21px 9px;
+}
+
+.services-containerLeft{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+    margin : auto;
+    padding: 21px 9px;
+}
+
+
+
+
+
+.services-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2px 11px;
+    margin: 0px 10px;
+}
+
+.services-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.services-img img{
+    width: 183px;
+    height: 181px;
+    border-radius: 31px;
+    border: 2px solid black;
+}
+
+/* Contact us section */
+.contactUS{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    padding: 14px 0px;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%
+
+}
+
+.contactUS .input{
+    width: 99%;
+    padding: 4px 8px;
+    margin: 9px 5px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn-submit{
+    margin : 6px 0px;
+    padding: 4px 9px;
+    font-size: 15px;
+    border : 2px solid black;
+    color: black;
+    width: 86px;
+    height: 32px;
+    align-self: center;
+}
+
+.footer{
+    padding: 11px 0px;
+    font-size: 1.1em;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Media query To make Website Responsive */
+
+@media screen and (max-width:940px){
+    .burger{
+        display: inline;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        
+    }
+    .nav-right{
+        flex-direction: column;
+        
+    }
+
+    /* Setting height of navbar and opacity of navlist for burger(to make web responsive) */
+    .nav-height{
+        height : 38px;
+    }
+
+    .v-class-rsp{
+        opacity: 0;
+    }
+
+    .main-box{
+        flex-direction: column-reverse;
+        height: 85%;
+    }
+
+    .services-containerRight{
+        flex-direction: column-reverse;
+        width: 92%;
+    }
+
+    .services-containerLeft{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+
+
+    .box{
+        width:87%;
+    }
+
+
+    .services-box{
+        align-items: center;
+        padding: 2px 4px;
+        margin: 10px 1px;
+    }
+
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+
+    .home-buttons{
+        text-align: center;
+    }
+
+    form{
+        width: 70%;
+    }
+    .contactUS .input{
+        width: 100%;
+    }    
+}    
+
